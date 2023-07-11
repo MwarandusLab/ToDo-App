@@ -15,7 +15,7 @@
                 <p id="result"></p>
                 <div class="input-box">
                     <ion-icon name="person-add-outline"></ion-icon>
-                    <input type="text" name="Username" required >
+                    <input type="text" name="Username" required>
                     <label for="">Username</label>
                 </div>
                 <div class="input-box">
@@ -34,7 +34,7 @@
                     <label for="">Confirm Password</label>
                 </div>
                 <div class="button">
-                    <input type="submit" class="btn" value="Register">
+                    <input type="submit" class="btn" onclick="validation()" value="Register">
                 </div>
                 <div class="group">
                     <span><a href="#">Forget-Password</a></span>
@@ -42,7 +42,14 @@
                 </div>
             </form>
         </div>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Thank you! </h2>
+            <p>You were Registered Succesfully</p>
+            <a href="Login.html"><button onclick="CloseSlide()" >OK</button></a>
+        </div>
     </div>
+    <script src="validate.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
